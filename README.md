@@ -7,7 +7,7 @@ To get a Git project into your build:
 
 Step 1. Add the JitPack repository to your build file
 
-if your gradle version from 7.0, add it in your root build.gradle at the end of repositories:
+if your gradle version less than 7.0, add it in your root build.gradle at the end of repositories:
 
 	allprojects {
 		repositories {
@@ -16,7 +16,7 @@ if your gradle version from 7.0, add it in your root build.gradle at the end of 
 		}
 	}
   
-if your gradle version less than 7.0, add it in your root settings.gradle at the end of repositories:
+if your gradle version from 7.0, add it in your root settings.gradle at the end of repositories:
 
     dependencyResolutionManagement {
 	    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
