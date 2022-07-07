@@ -9,6 +9,7 @@ interface MaterialLoadingInterface {
     fun setProgressBarColor(@ColorRes progressBarColor:Int): MaterialLoadingInterface
     fun setCancelable(cancelable:Boolean): MaterialLoadingInterface
     fun setOnDismissListener(dismissListener:() -> Unit): MaterialLoadingInterface
+    fun getIsAdded():Boolean
     fun show()
     fun dismiss()
 }

@@ -35,7 +35,12 @@ class MaterialLoadingDialog(private val context: Context): MaterialLoadingInterf
     }
 
     override fun show() {
-        loadingDialog.show((context as AppCompatActivity).supportFragmentManager,null)
+        if (!loadingDialog.isAdded)
+            loadingDialog.show((context as AppCompatActivity).supportFragmentManager,null)
+    }
+
+    override fun getIsAdded():Boolean {
+        return loadingDialog.isAdded
     }
 
     override fun dismiss() {
