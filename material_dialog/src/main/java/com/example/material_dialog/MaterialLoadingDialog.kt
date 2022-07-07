@@ -44,7 +44,8 @@ class MaterialLoadingDialog(private val context: Context): MaterialLoadingInterf
     }
 
     override fun dismiss() {
-        loadingDialog.dismissAllowingStateLoss()
+        if (loadingDialog.isAdded)
+            loadingDialog.dismissAllowingStateLoss()
     }
 
 }
