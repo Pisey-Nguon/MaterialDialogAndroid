@@ -31,7 +31,7 @@ if your gradle version from 7.0, add it in your root settings.gradle at the end 
 Step 2. Add the dependency
 
 	dependencies {
-	        implementation 'com.github.Pisey-Nguon:MaterialDialog:1.0.0'
+	        implementation 'com.github.Pisey-Nguon:MaterialDialog:1.0.1'
 	}
 	
 
